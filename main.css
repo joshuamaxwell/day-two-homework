@@ -1,0 +1,80 @@
+body * {
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  box-shadow: -1px 1px black;
+}
+
+header, subheader, feature, upcoming, footer {
+  width: 100%;
+}
+
+.container {
+  width: 962px;
+  margin: 0px auto;
+}
+
+.container div {
+  display: inline-block;
+}
+
+.column div{
+  display: block;
+}
+
+.feature-main {
+  width: 638px;
+}
+
+.feature-main-img {
+  width: 638px;
+} 
+
+.feature-main-img img {
+  width: 638px;
+  height: 400px;
+}
+
+.feature-side {
+  width: 318px;
+}
+
+.mobber-count-top {
+  width: 158px;
+}
+
+.mobber-count-bottom {
+  width: 158px;
+}
+
+.upcoming-thumb {
+  width: 318px;
+}
+
+.upcoming-list {
+  width: 638px;
+}
+
+.start-mob {
+  width: 318px;
+}
+
+.categories {
+  width: 318px;
+}
+
+.connect {
+  width: 318px;
+}
+
+.support {
+  width: 318px;
+}
