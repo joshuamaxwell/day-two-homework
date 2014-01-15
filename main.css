@@ -6,14 +6,14 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Didact Gothic', sans-serif;
-  font-size: .80em;
+  letter-spacing: 1;
 
 
 }
 
 .header, .subheader, .feature, .upcoming, .footer {
   width: 100%;
-  color: grey;
+  color: rgb(65, 65, 65);
 }
 
 .container {
@@ -97,7 +97,6 @@ body > .header {
   font-size: 17px;
   text-shadow: 0 1px black,
                -1px 0 gray;
-  letter-spacing: 1;
 }
 
 .header > .container * {
@@ -109,15 +108,15 @@ body > .header {
 }
 
 .subheader {
-  height: 100px;
-  color: rgba(87, 87, 87);
-  font-size: 1.35em;
+  height: 87px;
 }
 
 .subheader > .container *{
-  margin-left: 20px;
+  margin-left: 12px;
+  line-height: 87px;
   vertical-align: middle;
   display: inline-block;
+  font-size: 29px;
 }
 
 .subheader > .container {
@@ -125,8 +124,8 @@ body > .header {
 }
 
 .feature {
-  background: rgb(238, 236, 232);
-  box-shadow: inset 1px 0px 10px 0px rgb(216, 213, 213);
+  background: rgb(242, 240, 236);
+  box-shadow: inset 1px 0px 5px 0px rgb(185, 185, 185);
   padding-top: 20px;
 }
 
