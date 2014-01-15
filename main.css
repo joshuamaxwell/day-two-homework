@@ -1,6 +1,4 @@
 body * {
-  margin: 0px;
-  padding: 0px;
   vertical-align: top;
 }
 
@@ -35,54 +33,140 @@ header, subheader, feature, upcoming, footer {
   display: block;
 }
 
+.caption {
+  vertical-align: middle;
+}
+
+.caption *, .caption div {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.caption > .timer {
+  float: right;
+}
+
+.nav {
+  margin: 10px;
+}
+
+.header > .container * {
+  vertical-align: middle;
+}
+
+.subheader > .container *{
+  margin: 10px;
+}
+
+.subheader > .container * {
+  vertical-align: middle;
+}
+
 .feature-main {
-  width: 638px;
+  width: 618px;
+  margin: 10px;
 }
 
 .feature-main-img {
-  width: 638px;
+  width: 618px;
 } 
 
 .feature-main-img img {
-  width: 638px;
+  width: 618px;
   height: 440px;
 }
 
 .feature-side {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
 }
 
-.feature-side>.mobber-dash {
+.mobber-dash > div {
   display: inline-block;
-  margin: 0px auto;
 }
 
 .mobber-dash {
-  width: 318px;
+  width: 298px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .mobber-count {
-  width: 130px;
+  margin-right: 12px;
+}
+
+.mobber-needed-count {
+  margin-left: 12px;
 }
 
 .mobber-count-top {
   height: 130px;
+  width: 135px;
 }
 
 .mobber-count-bottom {
   height: 35px;
+  width: 135px;
 }
 
 .join {
   width: 318px;
+  height: 65px;
+  margin: 0px 0px;
+}
+
+.reward {
+  height: 85px;
+}
+
+.reward img {
+  height: 75px;
+  width: 50px;
+  float: left;
+  margin: 5px;
+}
+
+.reward * {
+  margin: 0px;
+}
+
+.feature-side > .subtext {
+  height: 65px;
+}
+
+.share-buttons {
+  height: 65px;
+}
+
+.share-buttons > img {
+  height: 25px;
+  width: 60px;
 }
 
 .upcoming-thumb {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
+}
+
+.upcoming-thumb > img {
+  width: 298px;
+  height: 215px;
+}
+
+.upcoming-thumb > .caption {
+  width: 298px;
+  height: 50px;
+  font-size: .70em;
+}
+
+.upcoming-thumb > .caption > .caption-text {
+  width: 218px;
 }
 
 .upcoming-list {
-  width: 638px;
+  width: 618px;
+  margin: 10px;
 }
 
 .upcoming-list-row-data {
@@ -91,11 +175,13 @@ header, subheader, feature, upcoming, footer {
 }
 
 .start-mob {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
 }
 
 .categories {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
 }
 
 .categories .header {
@@ -119,10 +205,12 @@ header, subheader, feature, upcoming, footer {
 }
 
 .connect {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
 }
 
 .support {
-  width: 318px;
+  width: 298px;
+  margin: 10px;
 }
 
