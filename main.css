@@ -26,6 +26,11 @@ header, subheader, feature, upcoming, footer {
   display: inline-block;
 }
 
+.button {
+  border-radius: 5px;
+  background: red; /**/
+}
+
 .column div{
   display: block;
 }
@@ -40,19 +45,36 @@ header, subheader, feature, upcoming, footer {
 
 .feature-main-img img {
   width: 638px;
-  height: 400px;
+  height: 440px;
 }
 
 .feature-side {
   width: 318px;
 }
 
+.feature-side>.mobber-dash {
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.mobber-dash {
+  width: 318px;
+}
+
+.mobber-count {
+  width: 130px;
+}
+
 .mobber-count-top {
-  width: 158px;
+  height: 130px;
 }
 
 .mobber-count-bottom {
-  width: 158px;
+  height: 35px;
+}
+
+.join {
+  width: 318px;
 }
 
 .upcoming-thumb {
@@ -63,12 +85,37 @@ header, subheader, feature, upcoming, footer {
   width: 638px;
 }
 
+.upcoming-list-row-data {
+  width: 210px;
+  float: left;
+}
+
 .start-mob {
   width: 318px;
 }
 
 .categories {
   width: 318px;
+}
+
+.categories .header {
+  display: block;
+}
+
+.categories .a, .categories .b {
+  width: 156px;
+}
+
+.a .button {
+  margin-right: 58px;
+}
+
+.b .button {
+  margin-left: 58px;
+}
+
+.categories .button {
+  width: 100px;
 }
 
 .connect {
@@ -78,3 +125,4 @@ header, subheader, feature, upcoming, footer {
 .support {
   width: 318px;
 }
+
