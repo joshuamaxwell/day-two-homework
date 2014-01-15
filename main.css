@@ -43,8 +43,9 @@ body {
 }
 
 .subtext {
-  font-size: .90em;
+  font-size: 12px;
   padding: 10px;
+  color: rgb(120, 120, 120);
 }
 
 .column div{
@@ -53,7 +54,6 @@ body {
 
 
 .caption *, .caption div {
-  margin: 0px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -125,31 +125,46 @@ body > .header {
 
 .feature {
   background: rgb(242, 240, 236);
-  box-shadow: inset 1px 0px 5px 0px rgb(185, 185, 185);
-  padding-top: 20px;
+  box-shadow: inset 1px 0px 3px 0px rgb(185, 185, 185);
+  padding-top: 30px;
 }
 
 .feature-main {
-  width: 618px;
-  margin: 10px;
+  width: 620px;
+  margin: 0 10px;
 }
 
 .feature-main > .caption {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
   color: white;
   position: absolute;
-  width: 618px;
-  height: 65px;
-  font-size: 1.75em;
+  width: 620px;
+  height: 56px;
+}
+
+.feature-main .caption > * {
+  margin: 0 20px;
+}
+
+.feature-main .caption .timer {
+  height: 56px;
+  line-height: 56px;
+}
+
+span.caption-text {
+  height: 56px;
+  line-height: 56px;
+  font-size: 24px;
 }
 
 .feature-main-img {
-  width: 618px;
+  width: 620px;
+  height: 400px;
 } 
 
 .feature-main-img img {
-  width: 618px;
-  height: 440px;
+  width: 620px;
+  height: 400px;
 }
 
 .feature-main-ribbon {
@@ -159,7 +174,7 @@ body > .header {
   vertical-align: middle;
   position: absolute;
   width: 125px;
-  height: 35px;
+  height: 32px;
   margin-left: -5px;
   margin-top: -17px;
   box-shadow: -2px 2px 0px 0px grey; 
@@ -171,51 +186,56 @@ body > .header {
 }
 
 .feature-main-img-footer {
-  padding: 25px 20px;
-  font-size: 1.5em;
+  height: 63px;
+  width: 620px;
+  font-size: 18px;
   font-style: oblique;
-  color: rgb(27, 27, 27);
-  background-color: rgb(208, 205, 199)
+  background-color: rgb(208, 205, 199);
+  vertical-align: middle;
+  padding-top: 20px;
+}
+
+.feature-main-img-footer span {
+  display: block;
+  vertical-align: middle;
+  width: 590px;
+  margin: 0 auto;
 }
 
 .feature-main > .subtext {
-  padding: 20px;
+  padding: 8px 20px 31px;
+  width: 550px;
+  font-size: 10px;
 }
 
 .feature-side {
-  width: 298px;
-  margin: 10px;
+  width: 300px;
+  margin: 0 0 0 10px;
 }
 
-.mobber-dash > div {
+
+div.mobber-count {
+  width: 139px;
   display: inline-block;
-}
-
-.mobber-dash {
-  width: 318px;
   text-align: center;
-  margin-bottom: 20px;
+  vertical-align: middle;
 }
 
-.mobber-dash * {
+div.mobber-needed-count {
+  width: 139px;
   display: inline-block;
-}
-
-.mobber-count {
-  margin-right: 7px;
-}
-
-.mobber-needed-count {
-  margin-left: 7px;
+  margin-left: 17px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .mobber-count-top {
-  height: 135px;
-  width: 150px;
+  height: 117px; /* this is to compensate for the original site*/
   background-color: rgb(208, 205, 199);
   color: white;
   text-shadow: 0px 2px gray;
-  font-size: 5.75em;
+  font-size: 75px;
+  line-height: 117px;
 }
 
 .mobber-count-top * {
@@ -223,13 +243,12 @@ body > .header {
 }
 
 .mobber-count-bottom {
-  height: 25px;
-  width: 150px;
+  height: 33px;
+  line-height: 33px;
   background-color: rgb(181, 174, 163);
   text-shadow: 0px 1px white;
-  font-size: 1.25em;
+  font-size: 10px;
   color: rgb(114, 114, 114);
-  padding-top: 10px;
 }
 
 .mobber-count-bottom * {
@@ -237,54 +256,72 @@ body > .header {
 }
 
 .join {
-  font-size: 2em;
-  width: 318px;
-  height: 70px;
+  font-size: 25px;
+  height: 60px;
   background-color: orange;
   color: white;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: -5px;
   border: 1px solid rgb(207, 156, 29);
   z-index: 20;
   position: relative;
-  box-shadow: 0px 7px 7px 0px rgb(204, 204, 204);
+  box-shadow: inset 0px 1px 1px -1px rgb(255, 255, 255),
+                    0px 1px 7px -2px rgb(131, 131, 131);
 }
 
 .join * {
-  margin-top: 20px;
+  height: 60px;
+  line-height: 60px;
 }
 
 
 .reward {
-  height: 85px;
-  margin: -5px 0px 0px 20px;
+  display: block;
+  height: 79px;
+  width: 290;
+  margin: 0 auto;
   background-color: white;
   border-radius: 0px 0px 5px 5px;
-  box-shadow: inset 1px -0px 5px 0px grey;
+  box-shadow: inset 0px -4px 0px -1px rgb(230, 230, 230);
   color: black;
-  border: 1px solid gray;
+  border: 1px solid rgb(177, 177, 177);
   position: relative;
   
 }
 
 .reward img {
-  height: 75px;
-  width: 50px;
+  position: relative;
+  width: 40px;
+  height: 54px;
   float: left;
   margin: 5px;
+  margin-top: 15px;
 }
 
-.reward * , .reward div {
-  margin: 0px;
-  display: inline-block;
+.reward .subtext {
+  font-size: 13px;
+  padding: 0px;
+  margin-top: -1px;
+  color: rgb(65, 65, 65);
 }
 
 .reward-text {
-  width: 200px;
-  padding-top: 20px;
+  padding-top: 16px;
+  font-size: 18px;
+  color: rgb(65, 65, 65);
+}
+
+.reward-text span {
+  display: block;
+  margin: 0px;
 }
 
 .feature-side > .subtext {
-  height: 65px;
+  height: 38px;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgb(177, 177, 177);
 }
 
 .share-buttons {
