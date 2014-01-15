@@ -17,6 +17,7 @@ div {
 
 .header, .subheader, .feature, .upcoming, .footer {
   width: 100%;
+  color: grey;
 }
 
 .container {
@@ -52,6 +53,7 @@ div {
 
 .feature-main > .caption {
   background-color: rgba(0, 0, 0, 0.25);
+  color: white;
   position: absolute;
   width: 618px;
   height: 60px;
@@ -79,6 +81,8 @@ body > .header {
   height: 65px;
   background-image: url(images/headerbackground.png); 
   color: white;
+  font-size: 2em;
+  text-shadow: rgb(0, 0 ,0) 0px 2px;
 }
 
 .header > .container * {
@@ -87,6 +91,8 @@ body > .header {
 
 .subheader {
   height: 87px;
+  color: black;
+  font-size: 1.35em;
 }
 
 .subheader > .container *{
@@ -121,10 +127,17 @@ body > .header {
 .feature-main-ribbon {
   background-color: orange;
   color: white;
+  position: absolute;
+  width: 125px;
+  height: 35px;
+  margin-left: -5px;
+  margin-top: -17px;
+  box-shadow: -2px 2px 0px 0px grey; 
 }
 
 .feature-main-img-footer {
-  padding: 10px;
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 .feature-side {
@@ -202,11 +215,18 @@ body > .header {
 .share-buttons {
   height: 65px;
   padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .share-buttons > img {
   height: 25px;
   width: 45px;
+}
+
+.share-buttons > * {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .upcoming-thumb {
@@ -226,7 +246,7 @@ body > .header {
 }
 
 .upcoming-thumb > .caption > .caption-text {
-  width: 218px;
+  width: 214px;
 }
 
 .upcoming-list {
