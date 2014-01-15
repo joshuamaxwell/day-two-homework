@@ -11,10 +11,6 @@ body {
 
 }
 
-div {
-  box-shadow: -1px 1px black;
-}
-
 .header, .subheader, .feature, .upcoming, .footer {
   width: 100%;
   color: grey;
@@ -34,10 +30,12 @@ div {
   text-align: center;
   vertical-align: middle;
   box-shadow: 0px 1px 3px 0px;
-  background: red; /**/
+  color: white; /**/
+  background: maroon; /**/
 }
 
 .button * {
+  margin: 0px;
   vertical-align: middle;
   display: inline-block;
 }
@@ -51,13 +49,6 @@ div {
   display: block;
 }
 
-.feature-main > .caption {
-  background-color: rgba(0, 0, 0, 0.25);
-  color: white;
-  position: absolute;
-  width: 618px;
-  height: 60px;
-}
 
 .caption *, .caption div {
   margin: 0px;
@@ -67,6 +58,7 @@ div {
 
 .caption > .timer {
   float: right;
+  font-size: .80em;
 }
 
 .nav {
@@ -90,8 +82,8 @@ body > .header {
 }
 
 .subheader {
-  height: 87px;
-  color: black;
+  height: 100px;
+  color: rgba(87, 87, 87);
   font-size: 1.35em;
 }
 
@@ -108,11 +100,21 @@ body > .header {
 .feature {
   background: rgb(238, 236, 232);
   box-shadow: inset 1px 0px 10px 0px rgb(216, 213, 213);
+  padding-top: 20px;
 }
 
 .feature-main {
   width: 618px;
   margin: 10px;
+}
+
+.feature-main > .caption {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  position: absolute;
+  width: 618px;
+  height: 65px;
+  font-size: 1.75em;
 }
 
 .feature-main-img {
@@ -125,8 +127,10 @@ body > .header {
 }
 
 .feature-main-ribbon {
-  background-color: orange;
+  background-color: rgb(249, 206, 0);
   color: white;
+  text-align: center;
+  vertical-align: middle;
   position: absolute;
   width: 125px;
   height: 35px;
@@ -135,9 +139,21 @@ body > .header {
   box-shadow: -2px 2px 0px 0px grey; 
 }
 
+.feature-main-ribbon * {
+  margin: 0px;
+  margin-top: 10px;
+}
+
 .feature-main-img-footer {
-  padding: 20px;
+  padding: 25px 20px;
   font-size: 1.5em;
+  font-style: oblique;
+  color: rgb(27, 27, 27);
+  background-color: rgb(208, 205, 199)
+}
+
+.feature-main > .subtext {
+  padding: 20px;
 }
 
 .feature-side {
@@ -150,45 +166,77 @@ body > .header {
 }
 
 .mobber-dash {
-  width: 298px;
+  width: 318px;
   text-align: center;
   margin-bottom: 20px;
 }
 
+.mobber-dash * {
+  display: inline-block;
+}
+
 .mobber-count {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .mobber-needed-count {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 .mobber-count-top {
-  height: 130px;
-  width: 135px;
+  height: 135px;
+  width: 150px;
+  background-color: rgb(208, 205, 199);
+  color: white;
+  text-shadow: 0px 2px gray;
+  font-size: 5.75em;
+}
+
+.mobber-count-top * {
+  margin: 25px 0px 0px 0px;
 }
 
 .mobber-count-bottom {
-  height: 35px;
-  width: 135px;
+  height: 25px;
+  width: 150px;
+  background-color: rgb(181, 174, 163);
+  text-shadow: 0px 1px white;
+  font-size: 1.25em;
+  color: rgb(114, 114, 114);
+  padding-top: 10px;
+}
+
+.mobber-count-bottom * {
+  margin: -3px 0px 0px 0px;
 }
 
 .join {
   font-size: 2em;
   width: 318px;
-  height: 65px;
-  margin: 0px 0px;
+  height: 70px;
   background-color: orange;
   color: white;
+  margin-top: 10px;
+  border: 1px solid rgb(207, 156, 29);
+  z-index: 20;
+  position: relative;
+  box-shadow: 0px 7px 7px 0px rgb(204, 204, 204);
+}
+
+.join * {
+  margin-top: 20px;
 }
 
 
 .reward {
   height: 85px;
-  margin: 0px 20px;
+  margin: -5px 0px 0px 20px;
   background-color: white;
   border-radius: 0px 0px 5px 5px;
   box-shadow: inset 1px -0px 5px 0px grey;
+  color: black;
+  border: 1px solid gray;
+  position: relative;
   
 }
 
@@ -205,7 +253,8 @@ body > .header {
 }
 
 .reward-text {
-  width: 195px;
+  width: 200px;
+  padding-top: 20px;
 }
 
 .feature-side > .subtext {
@@ -215,8 +264,10 @@ body > .header {
 .share-buttons {
   height: 65px;
   padding: 10px;
+  padding-top: 40px;
   display: inline-block;
   vertical-align: middle;
+  border: 1px 0px 0px 0px solid gray;
 }
 
 .share-buttons > img {
@@ -249,19 +300,24 @@ body > .header {
   width: 214px;
 }
 
+.upcoming-thumb .caption-text h3 {
+  color: black;
+}
+
 .upcoming-list {
   width: 618px;
   margin: 10px;
 }
 
 .upcoming-list-row-data {
-  width: 210px;
+  width: 190px;
   float: left;
 }
 
 .start-mob {
   width: 298px;
   margin: 10px;
+  background-color: rgb(208, 205, 199);
 }
 
 .start-mob > img {
@@ -271,6 +327,11 @@ body > .header {
 
 .start-mob * {
   margin: 0px auto;
+}
+
+.howtostartmob img {
+  width: 298px;
+  margin: 20px 0px;
 }
 
 .start-mob .button {
