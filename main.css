@@ -455,6 +455,10 @@ div.mobber-needed-count {
   margin-bottom: 10px;
 }
 
+.footer .subtext {
+  color: white;
+}
+
 .categories {
   width: 300px;
   margin-left: 10px;
