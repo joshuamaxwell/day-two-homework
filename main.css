@@ -401,13 +401,13 @@ div.upcoming-thumb.first {
   letter-spacing: 0;
 }
 
-.upcoming-thumb .caption-text p.header {
+.upcoming-thumb .caption-text > p.header {
   font-size: 15px;
   margin: 0px;
   color: rgb(0,0,0);
 }
 
-.upcoming-thumb .caption-text p {
+.upcoming-thumb .caption-text > p {
   font-size: 12px;
   margin: 0px;
   color: rgb(120, 120, 120);
