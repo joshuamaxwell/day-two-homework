@@ -401,7 +401,7 @@ div.upcoming-thumb.first {
   letter-spacing: 0;
 }
 
-.upcoming-thumb .caption-text h3 {
+.upcoming-thumb .caption-text p.header {
   font-size: 15px;
   line-height: 115%;
   margin: 0px;
