@@ -106,7 +106,7 @@ body .pageheader {
 }
 
 .pageheader .logo {
-  margin: -2px 41px 0 10px;
+  margin: -2px 41px 0 0px;
 }
 
 .subheader {
@@ -114,7 +114,7 @@ body .pageheader {
 }
 
 .subheader > .container *{
-  margin-left: 12px;
+  margin-left: 2px;
   line-height: 87px;
   vertical-align: middle;
   display: inline-block;
@@ -133,7 +133,7 @@ body .pageheader {
 
 .feature-main {
   width: 620px;
-  margin: 0 10px;
+  margin: 0 10 0 0px;
 }
 
 .feature-main > .caption {
@@ -153,6 +153,10 @@ body .pageheader {
   line-height: 56px;
 }
 
+.timer img {
+  margin-top: -4px;
+}
+
 span.caption-text {
   height: 56px;
   line-height: 56px;
@@ -167,24 +171,6 @@ span.caption-text {
 .feature-main-img img {
   width: 620px;
   height: 400px;
-}
-
-.feature-main-ribbon {
-  background-color: rgb(249, 206, 0);
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  position: absolute;
-  width: 125px;
-  height: 32px;
-  margin-left: -5px;
-  margin-top: -17px;
-  box-shadow: -2px 2px 0px 0px grey; 
-}
-
-.feature-main-ribbon * {
-  margin: 0px;
-  margin-top: 10px;
 }
 
 .feature-main-img-footer {
@@ -202,6 +188,7 @@ span.caption-text {
   vertical-align: middle;
   width: 590px;
   margin: 0 auto;
+  color: rgb(65, 65, 65);
 }
 
 .feature-main > .subtext {
@@ -212,7 +199,7 @@ span.caption-text {
 
 .feature-side {
   width: 300px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 5px;
 }
 
 
@@ -232,13 +219,13 @@ div.mobber-needed-count {
 }
 
 .mobber-count-top {
-  height: 117px; /* this is to compensate for the original site*/
+  height: 118px;
   background-color: rgb(208, 205, 199);
   color: white;
   text-shadow: 0px 1px rgb(153, 153, 153),
                0px -1px rgb(250, 250, 249);
   font-size: 75px;
-  line-height: 117px;
+  line-height: 118px;
 }
 
 .mobber-count-top * {
@@ -260,6 +247,7 @@ div.mobber-needed-count {
 
 .join {
   font-size: 25px;
+  text-shadow: 0 1px rgb(165, 108, 30);
   height: 60px;
   margin-top: 25px;
   margin-bottom: -5px;
@@ -271,7 +259,14 @@ div.mobber-needed-count {
 
 div .button.orange-button {
   color: white;
-  background-color: orange;
+  background: rgb(253,217,51); /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(253,217,51) 0%, rgb(227,166,45) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(253,217,51)), color-stop(100%,rgb(227,166,45))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd933', endColorstr='#e3a62d',GradientType=0 ); /* IE6-9 */
   border: 1px solid rgb(207, 156, 29);
 }
 
@@ -287,7 +282,7 @@ div .button.orange-button {
   width: 288;
   margin: 0 auto;
   background-color: white;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 6px 6px;
   box-shadow: inset 0px -4px 0px -1px rgb(230, 230, 230);
   color: black;
   border: 1px solid rgb(177, 177, 177);
@@ -300,14 +295,14 @@ div .button.orange-button {
   width: 40px;
   height: 54px;
   float: left;
-  margin: 5px;
-  margin-top: 15px;
+  margin: 8px;
+  margin-top: 13px;
 }
 
 .reward .subtext {
   font-size: 13px;
   padding: 0px;
-  margin-top: -1px;
+  margin-top: 0px;
   color: rgb(65, 65, 65);
 }
 
@@ -371,8 +366,11 @@ div .button.orange-button {
 
 .upcoming-thumb {
   width: 300px;
-  margin-left: 10px;
-  margin-right: 7px;
+  margin-left: 15px;
+}
+
+div.upcoming-thumb.first {
+  margin-left: 0px;
 }
 
 .upcoming-thumb > img {
@@ -417,9 +415,13 @@ div .button.orange-button {
 }
 
 .upcoming-list {
-  width: 630px;
+  width: 620px;
   margin: 10px 0 10px;
   color: rgb(65, 65, 65);
+}
+
+div.last {
+  border-bottom: none;
 }
 
 .upcoming-list > .header {
@@ -452,14 +454,14 @@ div .button.orange-button {
 }
 
 .upcoming-list-row-data {
-  width: 210px;
+  width: 206px;
   float: left;
   letter-spacing: 0;
 }
 
 .start-mob {
-  width: 300px;
-  margin: 21px 0 21px 20px;
+  width: 301px;
+  margin: 21px 0 21px 14px;
   background-color: rgb(208, 205, 199);
 }
 
@@ -480,12 +482,77 @@ div .button.orange-button {
   margin: 0px auto;
 }
 
-.howtostartmob img {
-  width: 300px;
-  margin: 5px 0px;
+.howtostartmob {
+  position: relative;
+  margin: 10px 10px;
+  width: 279px;
 }
 
-.start-mob .button {
+.howtostartmob div.a-step {
+  width: 78px;
+  display: inline-block;
+  margin-left: 17px;
+  z-index: 10;
+  position: relative;
+}
+
+div.a-step.first {
+  margin-left: 0px;
+}
+
+
+div.how {
+  margin-left: 0px;
+}
+
+.howtostartmob div.button {
+  width: 39px;
+  height: 39px;
+  line-height: 37px;
+  letter-spacing: 0px;
+  display: block;
+  border: 1px solid rgb(128, 126, 122);
+  border-radius: 39px;
+  font-size: 23px;
+  text-align: center;
+  color: rgb(120, 120, 120);
+  text-shadow: 0 1px rgb(252, 252, 252);
+  box-shadow:  inset 0  2px 2px -1px rgb(255, 255, 255),
+               inset 0 -2px 2px -1px rgb(200, 200, 200),
+                     0  2px 2px -1px rgb(175, 173, 168);
+
+  background: rgb(200,200,200); /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(200,200,200) 0%, rgb(253,253,253) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(200,200,200)), color-stop(100%,rgb(253,253,253))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgb(200,200,200) 0%,rgb(253,253,253) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgb(200,200,200) 0%,rgb(253,253,253) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgb(200,200,200) 0%,rgb(253,253,253) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgb(200,200,200) 0%,rgb(253,253,253) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
+
+}
+
+.howtostartmob p {
+  width: 78px;
+  color: rgb(65, 65, 65);
+  font-size: 12px;
+  text-align: center;
+}
+
+.howtostartmob .bar {
+  width: 200px;
+  height: 7px;
+  background-color: rgb(189, 187, 187);
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 40px;
+  z-index: 5;
+}
+
+.start-mob > .button {
+  margin: 4px 10px 11px 11px;
+  padding: 0;
   font-size: 23px;
   text-shadow: 0 1px white;
   width: 277px;
@@ -493,7 +560,6 @@ div .button.orange-button {
   line-height: 60px;
   border: 1px solid rgb(126, 123, 119);
   background-color: rgb(219, 217, 212);
-  margin: 4px 10px 11px 10px;
   box-shadow: inset 0 2px 0px -1px white; 
   color: rgb(48, 129, 174);
   text-align: center;
@@ -520,7 +586,7 @@ div .button.orange-button {
 
 .categories {
   width: 300px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 7px;
 }
 
@@ -556,7 +622,7 @@ div .button.orange-button {
 
 .connect, .support {
   width: 220px;
-  margin-left: 90px;
+  margin-left: 88px;
 }
 
 .connect .email {
@@ -569,8 +635,10 @@ div .button.orange-button {
   margin: 20px 0 15px;
   font-size: 12px;
   padding-left: 10px;
+  padding-right: 30px;
   color: rgb(120, 120, 120);
-  background: url(images/inputemail.png) no-repeat center center;
+  background: url(images/inputemail.png) no-repeat center right;
+  background-size: 300px;
 }
 
 .connect-link {
@@ -588,7 +656,7 @@ div .button.orange-button {
 }
 
 .support {
-  margin-left: 93px;
+  margin-left: 95px;
 }
 
 .support .howitworks {

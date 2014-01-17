@@ -1,0 +1,98 @@
+/* ribbon style */
+
+.feature-main-img-footer .ribbon-wrapper {
+  position: relative;
+  margin-top: -35px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  line-height: 32px;
+  text-shadow: 0 1px rgb(214, 166, 42);
+  font-style: normal;
+}
+.feature-main-img-footer  .ribbon-front {
+  background-color: #f5cb31;  height: 32px;
+  width: 140px;
+  position: relative;
+  left:-6px;
+  z-index: 2;
+}
+
+
+.feature-main-img-footer  .ribbon-edge-topleft,
+.feature-main-img-footer  .ribbon-edge-topright,
+.feature-main-img-footer  .ribbon-edge-bottomleft,
+.feature-main-img-footer  .ribbon-edge-bottomright {
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+  height:0px;
+  width:0px;
+}
+
+.feature-main-img-footer  .ribbon-edge-topleft,
+.feature-main-img-footer  .ribbon-edge-topright {
+}
+
+.feature-main-img-footer  .ribbon-edge-bottomleft,
+.feature-main-img-footer  .ribbon-edge-bottomright {
+  top: 32px;
+}
+
+.feature-main-img-footer  .ribbon-edge-topleft,
+.feature-main-img-footer  .ribbon-edge-bottomleft {
+  left: -6px;
+  border-color: transparent #f5cb31 transparent transparent;
+}
+
+.feature-main-img-footer  .ribbon-edge-topleft {
+  top: 0px;
+  border-width: 0px 6px 0 0;
+}
+.feature-main-img-footer  .ribbon-edge-bottomleft {
+  border-width: 0 6px 7px 0;
+}
+
+.feature-main-img-footer  .ribbon-edge-topright,
+.feature-main-img-footer  .ribbon-edge-bottomright {
+  left: 134px;
+  border-color: transparent transparent transparent #f5cb31;
+}
+
+.feature-main-img-footer  .ribbon-edge-topright {
+  top: 0px;
+  border-width: 0px 0 0 0px;
+}
+.feature-main-img-footer  .ribbon-edge-bottomright {
+  border-width: 0 0 0px 0px;
+}
+
+.feature-main-img-footer  .ribbon-back-left {
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  width: 10px;
+  height: 32px;
+    z-index: 0;
+}
+
+.feature-main-img-footer  .ribbon-back-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 32px;
+    z-index: 0;
+}
+
+
+
+div.ribbon-shadow {
+  position: absolute;
+  right: 0;
+  border-bottom: 1px solid rgb(197, 144, 38);
+  width: 134px;
+  height: 32px;
+  display: inline-block;
+  z-index: 1;
+}

@@ -3,6 +3,7 @@
 <head>
   <title>Mobber</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="ribbon.css">
 <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -41,17 +42,30 @@
         <div class="caption">
           <span class="caption-text" >U2 World Tour</span>
           <div class="timer">
-            <img src="images/clock.png">
+            <img src="images/clock.svg">
             This mob ends in 12:12:12
           </div>
         </div>
         <div class="feature-main-img">
           <img src="http://lorempixel.com/620/400">
         </div>
-        <div class="feature-main-ribbon">
-            <p>MOB MESSAGE</p>
-        </div>
+      
         <div class="feature-main-img-footer">
+
+            <!-- the fancy-pants ribbon begins -->
+            <div class="ribbon-wrapper">
+              <div class="ribbon-front">
+                MOB MESSAGE
+                <div class="ribbon-shadow"></div>
+              </div>
+              <div class="ribbon-edge-topleft"></div>
+              <div class="ribbon-edge-topright"></div>
+              <div class="ribbon-edge-bottomleft"></div>
+              <div class="ribbon-edge-bottomright"></div>
+              <div class="ribbon-back-left"></div>
+              <div class="ribbon-back-right"></div>
+            </div> <!-- end of the ribbon wrapper -->
+
           <span>
             "U2's 360 World Tour starts April 16, 2012. Get your tickets at Ticketmaster http://cl.ly/0d2P2f"
           </span>
@@ -106,7 +120,7 @@
   <div class="upcoming">
     <div class="container">
       <div class="upcoming-thumbs">
-        <div class="upcoming-thumb">
+        <div class="upcoming-thumb first">
           <img src="http://lorempixel.com/300/194">
           <div class="caption">
             <div class="caption-text">
@@ -114,7 +128,7 @@
               <p>52 Mobbers, 100 Mobbers Needed</p>
             </div>
             <div class="timer">
-              <img src="images/clock.png">
+              <img src="images/clock.svg">
               12:12:12
             </div>
           </div> <!-- caption -->
@@ -127,7 +141,7 @@
               <p>52 Mobbers, 100 Mobbers Needed</p>
             </div>
             <div class="timer">
-              <img src="images/clock.png">
+              <img src="images/clock.svg">
               12:12:12
             </div>
           </div> <!-- caption -->
@@ -140,7 +154,7 @@
               <p>52 Mobbers, 100 Mobbers Needed</p>
             </div>
             <div class="timer">
-              <img src="images/clock.png">
+              <img src="images/clock.svg">
               12:12:12
             </div>
           </div> <!-- caption -->
@@ -184,7 +198,7 @@
             Thursday, April 4, 2012
           </div>
         </div> <!-- upcoming list row -->
-        <div class="upcoming-list-row">
+        <div class="upcoming-list-row last">
            <div class="upcoming-list-row-data header">
             J. Crew Men's Watch Sale
           </div>
@@ -202,8 +216,33 @@
           Start your own mob.
         </div>
         <div class="howtostartmob">
-          <img src="images/howtostartmob.png">
-        </div>
+          <div class="bar"></div>
+          <div class="first a-step">
+            <div class="button">
+              1
+            </div> <!-- button -->
+            <p>
+              Upload Mob Image
+            </p> 
+          </div> <!-- a-step -->
+          <div class="a-step">
+            <div class="button">
+              2
+            </div> <!-- button -->
+            <p>
+              Write Mob Message
+            </p> 
+          </div> <!-- a-step -->
+          <div class="a-step">
+            <div class="button">
+              3
+            </div> <!-- button -->
+            <p>
+              Upload Mob Reward
+            </p> 
+          </div> <!-- a-step -->          
+        </div> <!-- howtostartmob -->
+
         <div class="button start-mob">
           Start a Mob
         </div>
@@ -250,7 +289,7 @@
           <img src="images/twitter.png">
           Follow us on Twitter
         </div>
-        <div class="connect-link">
+        <div class="connect-link last">
           <img src="images/google.png">
           +1 us on Google
         </div>                
