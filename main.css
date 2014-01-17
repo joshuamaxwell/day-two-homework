@@ -379,7 +379,7 @@ div.upcoming-thumb.first {
 }
 
 .upcoming-thumb .timer {
-  right: -4;
+  right: 0;
   font-size: 12px;
   margin-top: 5px;
 }
@@ -390,7 +390,7 @@ div.upcoming-thumb.first {
 
 .upcoming-thumb > .caption {
   position: relative;
-  width: 298px;
+  width: 300px;
   height: 54px;
 }
 
